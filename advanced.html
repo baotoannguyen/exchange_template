@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title></title>
+    <meta name="author" content="ToanNguyen">
+    <meta name="description" content="Testing for Crytocurrency exchange">
+    <meta name="keywords" content="cryto exchange">
+    <link rel="canonical" href="">
+    <meta name="theme-color" content="#310f72">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/pastel-glyph/2x/apple--v2.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Default Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" href="css/font_roboto.css">
+    <!-- Global site tag (gtag.js) - AdWords: 1045328140 --> 
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body id="wrapper">
+    <nav class="wrapper-box navbar navbar-expand-lg">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+            <div class="form-group" style="margin: 0">
+                <select class="custom-select" name="" 
+                style="border-radius: 0;     
+                        background-color: black;
+                        color: white;
+                        font-size: medium;">
+                    <option selected>BTC/VNĐ</option>
+                    <option value="">ETH/VNĐ</option>
+                    <option value="">DOGE/VNĐ</option>
+                </select>
+            </div>
+            <header>
+                <div class="sticky statistics row no-margin">
+                    <div class="container-fluid">
+                        <div class="row no-margin">
+                            <div class="col-md-12">
+                                <!-- <div class="head-splits name">
+                                    <h5 class="title">BTC<span class="gray-color">/VND</span></h5>
+                                </div> -->
+                                <div class="head-splits">
+                                    <p class="small gray-color">Giá gần nhất</p>
+                                    <p class="amount"><strong><span class="green-color">125,200,000</span> VNĐ</strong></p>
+                                </div>
+                                <div class="head-splits">
+                                    <p class="small gray-color">Thay đổi giá 24h</p>
+                                    <p class="amount"><strong><span class="red-color">-0.48</span> %</strong></p>
+                                </div>
+                                <div class="head-splits">
+                                    <p class="small gray-color">Giá cao nhất 24h</p>
+                                    <p class="amount"><strong><span class="gray-color">125,200,000</span> VNĐ</strong></p>
+                                </div>
+                                <div class="head-splits">
+                                    <p class="small gray-color">Giá thấp nhất 24h</p>
+                                    <p class="amount"><strong><span class="gray-color">124,300,000</span> VNĐ</strong></p>
+                                </div>
+                                <div class="head-splits">
+                                    <p class="small gray-color">Khối lượng 24h</p>
+                                    <p class="amount"><strong><span class="gray-color">0.16727659</span> BTC</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </header>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>     
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Đăng ký</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ngôn ngữ</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">
+                                Tiếng Việt
+                            </a>
+                            <a class="dropdown-item" href="">
+                                English
+                            </a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link language-btn" href=""><img src="img/icons/translate-icon.png"></a>
+                    </li> -->
+                </ul>
+            </div>
+
+            
+        </div>
+    </nav>
+    
+    <div class="need-100 wrapper-box page-container advanced">
+        <div class="need-100 container-fluid">
+            <div class="need-100 row maincontent">
+                <div class="need-50 col-lg-6 col-md-12 col-sm-12 col-xs-12 no-padding">
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="need-100 tradingview-widget-container">
+                        <div id="tradingview_35f2bc" class="need-100"></div>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+                <div class="need-50 need-border element col-lg-3 col-md-6 col-sm-6 col-xs-12 no-padding">
+                    <div class="left-side-widget">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="buy-tab" data-toggle="tab" href="#buy" role="tab" aria-controls="buy" aria-selected="true"><img src="img/icons/buy.jpg"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="sell-tab" data-toggle="tab" href="#sell" role="tab" aria-controls="sell" aria-selected="false"><img src="img/icons/sell.jpg"></a>
+                            </li>
+                            <!-- <li class="">
+                                <div class="form-group">
+                                    <select class="form-control" id="sel1">
+                                        <option>4 Decimals</option>
+                                        <option>5 Decimals</option>
+                                        <option>6 Decimals</option>
+                                        <option>7 Decimals</option>
+                                    </select>
+                                </div>
+                            </li> -->
+                        </ul>
+                        
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="buy" role="tabpanel" aria-labelledby="buy-tab">
+                                <table class="table flex-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Giá</th>
+                                            <th>Số lượng</th>
+                                            <th>VNĐ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">124,200,000</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="green-color">ENDDD</a></td>
+                                            <td><a href="" class="gray-color">0.86463721</a></td>
+                                            <td><a href="" class="gray-color">107,387,941</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="tab-pane fade" id="sell" role="tabpanel" aria-labelledby="sell-tab">
+                                <table class="table flex-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Giá</th>
+                                            <th>Số lượng</th>
+                                            <th>VNĐ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">123,900,000</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="" class="red-color">ENDDDDD</a></td>
+                                            <td><a href="" class="gray-color">0.05078965</a></td>
+                                            <td><a href="" class="gray-color">6,500,000</a></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="need-50 need-border element col-lg-3 col-md-6 col-sm-6 col-xs-12 no-padding">
+                    <div class="right-side-widget history">
+                        <div class="inner">
+                            <table class="table flex-table row-border table-hover no-header" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Price</th>
+                                        <th>ADC</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="green-color">0.00003262</span> </td>
+                                        <td><span class="">1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                    <tr class="clickable-row" data-href="">
+                                        <td><span class="red-color">-0.00003262</span> </td>
+                                        <td><span class="">-1.87</span></td>
+                                        <td><span class="gray-color">23:12:23</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="need-50 need-border element col-lg-6 col-md-12 col-sm-12 col-xs-12 order-2 order-md-2 order-lg-1 no-padding">
+                    <div class="order-widget">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="open-order-tab" data-toggle="tab" href="#open-order" role="tab" aria-controls="open-order" aria-selected="true">Đơn hàng đang mở</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="trade-history-tab" data-toggle="tab" href="#trade-history" role="tab" aria-controls="trade-history" aria-selected="false">Lịch sử giao dịch</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="open-order" role="tabpanel" aria-labelledby="open-order-tab">
+                                <div class="row">
+                                    <table class="table table-responsive-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>Loại</th>
+                                                <th>Giá(VNĐ)</th>
+                                                <th>Số lượng(BTC)</th>
+                                                <th>Tổng(VNĐ)</th>
+                                                <th>Ngày tháng</th>
+                                                <th>Thao tác</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>104,000,000</td>
+                                                <td>1.00000000</td>
+                                                <td>104,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>100,000,000</td>
+                                                <td>0.34567895</td>
+                                                <td>100,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>104,000,000</td>
+                                                <td>1.00000000</td>
+                                                <td>104,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>100,000,000</td>
+                                                <td>0.34567895</td>
+                                                <td>100,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>104,000,000</td>
+                                                <td>1.00000000</td>
+                                                <td>104,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>100,000,000</td>
+                                                <td>0.34567895</td>
+                                                <td>100,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>104,000,000</td>
+                                                <td>1.00000000</td>
+                                                <td>104,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>100,000,000</td>
+                                                <td>0.34567895</td>
+                                                <td>100,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>104,000,000</td>
+                                                <td>1.00000000</td>
+                                                <td>104,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>100,000,000</td>
+                                                <td>0.34567895</td>
+                                                <td>100,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>104,000,000</td>
+                                                <td>1.00000000</td>
+                                                <td>104,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>100,000,000</td>
+                                                <td>0.34567895</td>
+                                                <td>100,000,000</td>
+                                                <td>20/04/2019 ,10:43</td>
+                                                <td><button type="button" class="btn-danger btn-sm"><i class="fas fa-times"></i></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="trade-history" role="tabpanel" aria-labelledby="trade-history-tab">
+                                <div class="row">
+                                    <table class="table table-responsive-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>Thời gian</th>
+                                                <th>Loại</th>
+                                                <th>Giá(VNĐ)</th>
+                                                <th>Số Lượng(BTC)</th>
+                                                <th>Tổng giao dịch</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>26/01/2019, 22:39:57</td>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>2,600,000</td>
+                                                <td>0.02356589</td>
+                                                <td>61,271</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/01/2019, 14:21:44</td>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>2,651,000</td>
+                                                <td>0.02383605</td>
+                                                <td>63,189</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/01/2019, 22:39:57</td>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>2,600,000</td>
+                                                <td>0.02356589</td>
+                                                <td>61,271</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/01/2019, 14:21:44</td>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>2,651,000</td>
+                                                <td>0.02383605</td>
+                                                <td>63,189</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/01/2019, 22:39:57</td>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>2,600,000</td>
+                                                <td>0.02356589</td>
+                                                <td>61,271</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/01/2019, 14:21:44</td>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>2,651,000</td>
+                                                <td>0.02383605</td>
+                                                <td>63,189</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/01/2019, 22:39:57</td>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>2,600,000</td>
+                                                <td>0.02356589</td>
+                                                <td>61,271</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/01/2019, 14:21:44</td>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>2,651,000</td>
+                                                <td>0.02383605</td>
+                                                <td>63,189</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/01/2019, 22:39:57</td>
+                                                <td class="green-color">Mua <i class="fas fa-arrow-up"></i></td>
+                                                <td>2,600,000</td>
+                                                <td>0.02356589</td>
+                                                <td>61,271</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/01/2019, 14:21:44</td>
+                                                <td class="red-color">Bán <i class="fas fa-arrow-down"></i></td>
+                                                <td>2,651,000</td>
+                                                <td>0.02383605</td>
+                                                <td>63,189</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="need-50 need-border col-lg-6 col-md-12 col-sm-12 col-xs-12 order-1 order-md-1 order-lg-2 no-padding">
+                    <div class="order-buy-sell">
+                        <div class="center-widget on-device">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="limit-tab" data-toggle="tab" href="#dobuy" role="tab" aria-controls="limit" aria-selected="true">Đặt Mua</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="market-tab" data-toggle="tab" href="#dosell" role="tab" aria-controls="market" aria-selected="false">Đặt Bán</a>
+                                </li>
+                            </ul>
+
+
+
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="dobuy" role="tabpanel" aria-labelledby="limit-tab">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h5 class="title"><strong>MUA BTC</strong></h5>
+                                            
+                                            <table style="width: 80%">
+                                                <tr>
+                                                    <td style="text-align: left">Bạn có:</td>
+                                                    <td>100,000,000 VNĐ</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left">Giá thấp nhất:</td>
+                                                    <td>120,500,000 VNĐ</td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <div>
+                                                <div class="input-group input-group-sm mt-2">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Số lượng</span>
+                                                    </div>
+                                                    <input type="number" class="form-control" placeholder="0">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">BTC</span>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group input-group-sm mt-2">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Giá</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="BTC">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">VNĐ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group input-group-sm mt-2 mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Tổng</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="BTC">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">VNĐ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="form-group">
+                                                <a class="btn btn-success">MUA</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="dosell" role="tabpanel" aria-labelledby="market-tab">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <h5 class="title"><strong>BÁN BTC</strong></h5>
+                                        
+                                            <table style="width: 80%">
+                                                <tr style="text-align: left">
+                                                    <td>Bạn có:</td>
+                                                    <td>1.2015456 BTC</td>
+                                                </tr>
+                                                <tr style="text-align: left">
+                                                    <td >Giá cáo nhất:</td>
+                                                    <td>122,600,000 VNĐ</td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <div>
+                                                <div class="input-group input-group-sm mt-2">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Số lượng</span>
+                                                    </div>
+                                                    <input type="number" class="form-control" placeholder="0">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">BTC</span>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group input-group-sm mt-2">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Giá</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="BTC">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">VNĐ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group input-group-sm mt-2 mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Tổng</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="BTC">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">VNĐ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a class="btn btn-danger">BÁN</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="center-widget on-desktop">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="limit" role="tabpanel" aria-labelledby="limit-tab">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h5 class="title"><strong>MUA BTC</strong></h5>
+                                            
+                                            <table style="width: 80%">
+                                                <tr>
+                                                    <td style="text-align: left">Bạn có:</td>
+                                                    <td>100,000,000 VNĐ</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left">Giá thấp nhất:</td>
+                                                    <td>120,500,000 VNĐ</td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <div>
+                                                <div class="input-group input-group-sm mt-2">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Số lượng</span>
+                                                    </div>
+                                                    <input type="number" class="form-control" placeholder="0">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">BTC</span>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group input-group-sm mt-2">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Giá</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="BTC">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">VNĐ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group input-group-sm mt-2 mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Tổng</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="BTC">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">VNĐ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="form-group">
+                                                <a class="btn btn-success">MUA</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <h5 class="title"><strong>BÁN BTC</strong></h5>
+                                        
+                                            <table style="width: 80%">
+                                                <tr style="text-align: left">
+                                                    <td>Bạn có:</td>
+                                                    <td>1.2015456 BTC</td>
+                                                </tr>
+                                                <tr style="text-align: left">
+                                                    <td >Giá cáo nhất:</td>
+                                                    <td>122,600,000 VNĐ</td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <div>
+                                                <div class="input-group input-group-sm mt-2">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Số lượng</span>
+                                                    </div>
+                                                    <input type="number" class="form-control" placeholder="0">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">BTC</span>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group input-group-sm mt-2">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Giá</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="BTC">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">VNĐ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group input-group-sm mt-2 mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Tổng</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" placeholder="BTC">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">VNĐ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a class="btn btn-danger">BÁN</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    </script>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+
+<script type="text/javascript">
+new TradingView.widget({
+    "autosize": true,
+    "symbol": "Binance:TRXBTC",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "Dark",
+    "style": "1",
+    "locale": "en",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": false,
+    "save_image": false,
+    "hideideas": true,
+    "container_id": "tradingview_35f2bc"
+});
+</script>
+
+
+</html>
