@@ -1191,6 +1191,7 @@ h6.right-side-widget-title {
 .advanced .order-widget .nav-tabs {
     background-color: #131724;
     border-color: #2f333f;
+    height: auto;
 }
 
 .advanced .order-widget th {
@@ -1240,7 +1241,7 @@ h6.right-side-widget-title {
     background-color: #131724;
     padding: 10px;
     color: #777;
-    /* height: 30vh; */
+    height: 100%;
     overflow-x: hidden;
 }
 
