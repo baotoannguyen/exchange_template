@@ -21,7 +21,7 @@ body {
 /*================== START UPDATE================= */
 
 ::-webkit-scrollbar {
-    height: 4px;
+    height: 0px;
     width: 2px;
     background-color: #47494c;
 }
@@ -1223,7 +1223,7 @@ h6.right-side-widget-title {
 .advanced .order-widget .nav-tabs .nav-item:active {
     border-top: 0;
     border-radius: 0;
-    background-color: #242938;
+    background-color: dimgray;
     color: #f4ba2f;
 }
 
@@ -1232,7 +1232,7 @@ h6.right-side-widget-title {
     padding: 10px;
     color: #777;
     height: 100%;
-    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .advanced .order-widget h6.title {
