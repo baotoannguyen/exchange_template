@@ -900,6 +900,7 @@ h6.right-side-widget-title {
 
 .advanced .left-side-widget .table thead {
     border-bottom: 1px solid #2f3340;
+    height: auto;
 }
 
 .advanced .left-side-widget .tab-content {
