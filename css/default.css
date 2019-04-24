@@ -710,10 +710,6 @@ footer .social ul li a:active {
     border-bottom: 1px solid #dadde0;
 }
 
-.right-side-widget .table.no-header {
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
-}
 
 h6.right-side-widget-title {
     margin-top: 20px;
@@ -1050,11 +1046,6 @@ h6.right-side-widget-title {
 
 .advanced .right-side-widget .table thead {
     border-bottom: 1px solid #2f333f;
-}
-
-.advanced .right-side-widget .table.no-header {
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
 }
 
 
