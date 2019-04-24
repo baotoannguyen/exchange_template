@@ -12,10 +12,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-transition: 0.25s ease;
     transition: 0.25s ease;
-    overflow-x: hidden;
-    position: relative;
+    /* overflow: hidden; */
+    /* position: relative; */
     box-sizing: border-box;
-    /* overflow-x:hidden; */
     height: 100%;
 }
 
