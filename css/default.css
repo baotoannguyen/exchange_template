@@ -850,12 +850,12 @@ h6.right-side-widget-title {
     /* height: 50vh; */
     display: -webkit-flex;
     flex-direction: column;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .advanced .left-side-widget .nav-tabs {
     background-color: #131723;
-    position: relative;
+    /* position: relative; */
     border-color: #2f333f;
 }
 
