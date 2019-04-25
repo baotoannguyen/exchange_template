@@ -550,7 +550,7 @@ footer .social ul li a:active {
 }
 
 .left-side-widget .nav-tabs .nav-item{
-    height: 100%;
+    height: auto;
 }
 
 .left-side-widget .nav-tabs .nav-link img {
