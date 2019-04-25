@@ -551,6 +551,7 @@ footer .social ul li a:active {
 
 .left-side-widget .nav-tabs .nav-item{
     height: auto;
+    margin-bottom: 0;
 }
 
 .left-side-widget .nav-tabs .nav-link img {
