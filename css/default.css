@@ -549,6 +549,10 @@ footer .social ul li a:active {
     margin-left: -5px;
 }
 
+.left-side-widget .nav-tabs .nav-link{
+    height: 100%;
+}
+
 .left-side-widget .nav-tabs .nav-link img {
     height: 20px;
     margin: 0;
